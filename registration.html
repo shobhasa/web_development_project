@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>Keep Rising Artisanal Bakery-Registration</title>
+</head>
+<body>
+     <header> 
+        <img src="images/logo.png" alt="Keep Rising Bakery Logo" class="logo">     
+     <!-- Skip link for accessibility purpose -->
+        <a href="#registration_form" class="skip_link">Skip to main content</a>
+        
+        <!-- Navigation Menu -->
+        <nav class="navbar">            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <!-- Registration page image and form  -->
+         <!-- Nielsen, K. (n.d.). Chef preparing dough for baking in café [Photograph]. Pexels. https://www.pexels.com/photo/chef-preparing-dough-for-baking-in-cafe-6287292/-->
+        <img src="images/regimg.jpg" alt="picture of kneading">
+        <div class="wrapper">
+            <div class="form_container">
+                <h1>Customer Registration</h1>
+                <p><strong>Join our community!</strong>  Fill in your details to sign up, choose your favourites, and tell us how you discovered us. It only takes a minute, and you'll be part of our family.</p>
+                <form id="registration_form" action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <span class="error" id="firstname_error"></span>
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" >
+                        <span class="error" id="lastname_error"></span>
+                    </p>
+                    <p>
+                        <span>Gender:</span>
+                        <input type="radio" id="male" name="gender" value="M">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="F">
+                        <label for="female">Female</label> 
+                        <span class="error" id="gender_error"></span>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <span class="error" id="email_error"></span>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                        <span class="error" id="password_error"></span>
+                    </p>
+                    <fieldset>
+                        <legend>Favourite Items:</legend>
+                        <input type ="checkbox" id="fav1" name="fav1" value="Sourdough">
+                        <label for="fav1">Sourdough bread</label>
+                        <input type ="checkbox" id="fav2" name="fav2" value="MultiBread">
+                        <label for="fav2">Multigrain bread</label>
+                        <input type ="checkbox" id="fav3" name="fav3" value="Hifiber">
+                        <label for="fav3">Hi Fiber bread</label><br>
+                        <input type ="checkbox" id="fav4" name="fav4" value="Croissants">
+                        <label for="fav4">Croissants</label>
+                        <input type ="checkbox" id="fav5" name="fav5" value="Cupcakes">
+                        <label for="fav5">Cupcakes</label>
+                        <input type ="checkbox" id="fav6" name="fav6" value="cookies">
+                        <label for="fav6">Cookies</label>
+                         <span class="error" id="fav_error"></span>
+                    </fieldset>
+                
+                    <p>
+                        <label for="findus">How did you find us?</label>
+                        <select id="findus" name="findus">
+                            <option value="">Select one</option>
+                            <option value="friend">Friend</option>
+                            <option value="social">Social Media</option>
+                            <option value="search">Searching</option>
+                            <option value="local">Local</option>
+                            <option value="other">Other</option>
+                        </select> 
+                        <span class="error" id="findus_error"></span>
+                    </p>
+                    <!-- submit buton -->
+                       <input class="submit" type="submit" value="Submit">
+                    
+                </form>
+            </div>
+        </div>   
+    </main>
+
+        <!-- Coming soon aside -->
+        <div class="aside_container">
+            <aside>
+                <h3>Coming Soon 🍞</h3>
+                <ul>
+                    <li>Banana/Blueberery Muffins</li>
+                    <li>Mini treats Box</li>
+                    <li>Gluten-Free Cupcakes</li>
+                </ul>
+                <article>
+                    <h4>Baking lovers tip</h4>
+                    <p>Try our sourdough starter at home for a fresh, tangy loaf!</p>
+                </article>
+            </aside>
+        </div>
+    <footer>
+        <p><strong>Keep Rising Artisanal Bakery</strong></p>
+        <p>📍 Berwick Village, Berwick</p>
+        <p>📞 0400 123123</p>
+        <p>✉️ info@keeprisingbakery.com</p>
+        <p>&copy; 2025 Keep Rising Bakery - Baked with love, waste-free.</p>
+    </footer>
+</body>
+</html>

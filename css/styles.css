@@ -1,0 +1,227 @@
+/* General body styles */
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/*Logo styles*/
+.logo {
+    display: block;    
+    margin:auto;
+    width: 250px; /*to adjust logo size */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/* Skip link styles for accessibility purposes */
+.skip_link {
+  position: absolute;
+    top: -40px;          /* hide off-screen by default */
+    left: 0;
+    background-color: #6B4226;
+    color: #fff;
+    padding: 8px 16px;
+    border:2px solid #6B4226;
+    text-decoration: none;
+    z-index: 100; /*to make skip link appear on top */
+}
+
+.skip_link:focus {
+   top:10px;
+   left:10px;
+}
+
+/* Nav bar styles */
+.navbar ul {
+    list-style: none;
+    background: #FFF4E1;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a {
+    color :#6B4226;
+    font-family : OpenSans, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.navbar a:hover {
+    background-color:#6B4226;
+    color: #FFF4E1;
+    transform: scale(1.01); 
+}
+
+/* Main Content styles */
+
+.main_container {
+    width: 70%;
+    float:left;
+    padding: 20px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    color:#6B4226;
+    line-height: 1.2;
+}
+
+/* Products section styles */
+.products div {
+    display: inline-block;
+    width: 30%;      /* 3 products per row */
+    margin: 1%;
+    text-align: center;   
+    vertical-align: top;
+}
+
+.products img {
+    width: 80%;
+    height: auto;
+}
+.products::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Aside styles */
+.aside_container {
+    width: 20%;
+    float: right;
+    background-color: #FFF4E1;
+    color: #6B4226;
+    font-size: 14px;
+    padding: 10px;
+    margin : 10px;
+    border: 1px solid white;
+    border-radius: 10px;   
+}
+
+/* Registration page and Form styles*/
+
+.wrapper{
+    margin: 20px;
+}
+
+.form_container {
+    width: 70%;
+    float:left;
+    padding: 15px;
+    margin: auto;
+    color: #6B4226;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form input[type=password],
+form fieldset {
+    width: 100%;
+    padding: 10px;
+    color:#6B4226;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #6B4226;
+    border-radius: 10px;
+    font-family : OpenSans, Arial, sans-serif;
+}
+fieldset label {
+    display: inline-block;
+    width: 150px;   
+    margin-bottom: 5px;
+}
+
+/* Error message styles */
+.error {
+    color:  #FF6F00;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Dropdown select styles */
+#findus {
+    width: 250px;              
+    padding: 8px;    
+    margin: 10px;          
+    border: 1px solid #6B4226; 
+    border-radius: 6px;        
+    font-size: 16px;
+    font-family: OpenSans, Arial, sans-serif;
+    color: #6B4226;
+    cursor: pointer;
+}
+
+/* Change look when hovering */
+#findus:hover {
+    border-color: #6B4226;
+}
+
+/* Change look when focused */
+#findus:focus {
+    outline: none;
+    border-color: #6B4226;
+}
+
+/* Submit button styles */
+.submit {
+    float: right;
+    width:150px;
+    font-family : OpenSans, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#6B4226;
+    padding: 10px;
+    margin: 10px;
+    background: none;
+    border: 1px solid #6B4226;;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background: #6B4226;
+    color: #ffffff; 
+    transform: scale(1.01); 
+}
+
+/* Order page styles*/
+.inline_labels span{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    width: 40%;
+}
+
+#sameas{
+    width: 50%
+}
+
+
+/* Footer styles */
+footer {
+    clear:both;
+    width:100%;
+    background-color: #FFF4E1;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: #6B4226;
+    line-height: 1;
+    padding: 10px;
+    margin-top: 0;
+}
+

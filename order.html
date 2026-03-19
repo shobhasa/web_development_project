@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>Keep Rising Artisanal Bakery-Order </title>
+</head>
+<body>
+     <header> 
+        <img src="images/logo.png" alt="Keep Rising Bakery Logo" class="logo">     
+     <!-- Skip link for accessibility purpose -->
+        <a href="#order_form" class="skip_link">Skip to main content</a>
+       
+        <!-- Navigation Menu -->
+        <nav class="navbar">            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main id="main_content">
+        <!-- Photo by Natalia Olivera: https://www.pexels.com/photo/artisan-bread-loaf-with-leaf-design-on-rustic-table-30666736/ -->
+         <!-- Freepik. (n.d.). Close-up of male baker’s hand holding baked bread in a paper bag [Photograph]. Freepik. https://www.freepik.com/free-photo/close-up-male-baker-s-hand-holding-baked-bread-paper-bag_2966224.htm -->
+        <img src="images/orderimg.jpg" alt="collection of bakery products">
+        
+    <!-- Pre-order form  -->
+        <div class="wrapper">
+            <div class="form_container">
+                <h1>Pre-Order form</h1>
+                <form id="preorder_form" action="https://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+                    <p>
+                        <span>Delivery Method:</span>                    
+                        <input type="radio" id="delivery" name="delivery_method" value="D"> 
+                        <label for="delivery">Delivery</label> 
+                        <input type="radio" id="pickup_delivery" name="delivery_method" value="P">                   
+                        <label for="pickup_delivery">Pick-up</label>
+                        <span class="error" id="delivery_method_error"></span>
+                    </p>
+                    
+                    <!-- Delivery address -->
+                    <div id="delivery_address_container">
+                        <fieldset>
+                            <legend>Delivery Address</legend>
+                            <p>
+                                <label for="delivery_addLine1">Address Line 1:</label>
+                                <input type="text" id="delivery_addLine1" name="delivery_addLine1">
+                                <span class="error" id="delivery_addLine1_error"></span>
+                            </p>
+                            <p>
+                                <label for="delivery_addLine2">Address Line 2 (optional):</label>
+                                <input type="text" id="delivery_addLine2" name="delivery_addLine2">                                
+                            </p>
+                            <p>
+                                <label for="delivery_suburb">Suburb:</label>
+                                <input type="text" id="delivery_suburb" name="delivery_suburb">
+                                <span class="error" id="delivery_suburb_error"></span>
+                            </p>   
+                            <p class="inline_labels">
+                                <span>
+                                    <label for="delivery_state">State:</label>
+                                    <input type="text" id="delivery_state" name="delivery_state">
+                                    <span class="error" id="delivery_state_error"></span>
+                                </span>
+                                <span>
+                                    <label for="delivery_postcode">Postcode</label>
+                                    <input type="text" id="delivery_postcode" name="delivery_postcode">
+                                    <span class="error" id="delivery_postcode_error"></span>
+                                </span>
+                            </p>
+                        </fieldset>
+                    </div>
+                    
+                    <!-- Billing address -->
+                    <div class="billing_address_container">
+                        <fieldset>
+                            <legend>Billing Address</legend>
+                            <div class="sameas_wrapper">
+                                <div id="sameas_container">
+                                <input type="checkbox" id="sameas_delivery_address" name="sameas_delivery_address" value="checked">
+                                <label id ="sameas" for="sameas_delivery_address">Same as Delivery Address:</label>  
+                                <span class="error" id="sameas_delivery_address_error"></span>                                                     
+                                </div>
+                            </div>
+                            <p>
+                                <label for="billing_addLine1">Address Line 1:</label>
+                                <input type="text" id="billing_addLine1" name="billing_addLine1">
+                                <span class="error" id="billing_addLine1_error"></span>
+                            </p>
+                            <p>
+                                <label for="billing_addLine2">Address Line 2 (optional):</label>
+                                <input type="text" id="billing_addLine2" name="billing_addLine2">                                
+                            </p>
+                            <p>
+                                <label for="billing_suburb">Suburb:</label>
+                                <input type="text" id="billing_suburb" name="billing_suburb">
+                                <span class="error" id="billing_suburb_error"></span>
+                            </p>    
+                            <p class="inline_labels">
+                                <span>
+                                    <label for="billing_state">State:</label>
+                                    <input type="text" id="billing_state" name="billing_state">
+                                    <span class="error" id="billing_state_error"></span>
+                                </span>
+                                <span>
+                                    <label for="billing_postcode">Postcode</label>
+                                    <input type="text" id="billing_postcode" name="billing_postcode">
+                                    <span class="error" id="billing_postcode_error"></span>
+                                </span>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <p>
+                        <label for="contact">Contact No:</label>
+                        <input type="tel" id="contact" name="contact">
+                        <span class="error" id="contact_error"></span>
+                    </p>
+                    <p>
+                        <label for="email">Email for receipt:</label>
+                        <input type="email" id="email" name="email" autocomplete="email">
+                        <span class="error" id="email_error"></span>
+                    </p>
+                    <p>
+                        <span>Payment Type</span>                    
+                        <input type="radio" id="pickup_payment" name="payment_type" value="P"> 
+                        <label for="pickup_payment">Pick-up</label> 
+                        <input type="radio" id="online_payment" name="payment_type" value="O">                   
+                        <label for="online_payment">Online</label>
+                        <span class="error" id="payment_type_error"></span>
+                    </p>
+
+                    <!-- credit card details -->
+                    <fieldset id="credit_card_container">
+                        <legend>Credit Card Details</legend>
+                        <p>
+                            <span>Card Type:</span>
+                            <input type ="radio" id ="master" name ="card_type" value ="m">
+                            <label for = "master">Master</label>
+                            <input type ="radio" id ="visa" name ="card_type" value ="v">
+                            <label for = "visa">Visa</label>
+                            <input type ="radio" id ="american_express" name ="card_type" value ="a">
+                            <label for = "american_express">American Express</label>
+                            <span class="error" id="card_type_error"></span>
+                        </p>
+                        <p class="inline_labels">
+                            <span>
+                                <label for="cardholder_name">Cardholder Name:</label>
+                                <input type="text" id="cardholder_name" name="cardholder_name">
+                                <span class="error" id="cardholder_name_error"></span>
+                            </span>
+                            <span>
+                                <label id="cardno" for="card_no">Card Number:</label>
+                                <input type="tel" id="card_no" name="card_no" placeholder="xxxx xxxx xxxx xxxx">
+                                <span class="error" id="card_no_error"></span>
+                            </span>
+                        </p>
+                        <p class="inline_labels">
+                            <span>
+                                <label for="exp_date">Exp. Date (MM/YY):</label>
+                                <input type="text" id="exp_date" name="exp_date" placeholder="MM/YY">
+                                <span class="error" id="exp_date_error"></span>
+                            </span>
+                            <span>
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" inputmode="numeric">
+                                <span class="error" id="cvv_error"></span>
+                            </span>
+                        </p>
+                    </fieldset>
+                    
+                    <!-- sumbit button -->
+                   <input class="submit" type="submit" value="Submit">   
+                </form>
+            </div>
+            <!-- Opening hours aside -->
+            <div class="aside_container">
+                <aside >
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 7:00 AM - 5:00 PM</li>
+                        <li>Saturday: 8:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </aside>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <p><strong>Keep Rising Artisanal Bakery</strong></p>
+        <p>📍 Berwick Village, Berwick</p>
+        <p>📞 0400 123123</p>
+        <p>✉️ info@keeprisingbakery.com</p>
+        <p>&copy; 2025 Keep Rising Bakery - Baked with love, waste-free.</p>
+    </footer>
+</body>
+</html>
